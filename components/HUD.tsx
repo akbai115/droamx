@@ -37,13 +37,12 @@ const HUD: React.FC = () => {
       </div>
 
       {/* Bottom Center: CA */}
-      <div className="fixed bottom-10 inset-x-0 flex flex-col items-center justify-center gap-1 z-[500] opacity-[0.2] hover:opacity-50 transition-opacity duration-500 cursor-pointer"
+      <div className="fixed bottom-12 inset-x-0 flex flex-col items-center justify-center gap-2 z-[500] cursor-pointer hover:scale-105 transition-transform duration-300"
         onClick={() => {
           navigator.clipboard.writeText('2GnZbLQjWDRtYwbwxvg22yCvceVW6q4hYGMEjCEMpump');
-          // Optional: visual feedback could be added here, but minimalist style might prefer subtly
         }}>
-        <span className="text-[6px] tracking-[0.3em] uppercase font-light">CONTRACT_ADDRESS</span>
-        <span className="text-[6px] tracking-[0.15em] font-mono">2GnZbLQjWDRtYwbwxvg22yCvceVW6q4hYGMEjCEMpump</span>
+        <span className="text-[10px] tracking-[0.4em] uppercase font-bold opacity-80">CONTRACT_ADDRESS</span>
+        <span className="text-sm md:text-base tracking-[0.1em] font-mono font-bold opacity-100 select-all">2GnZbLQjWDRtYwbwxvg22yCvceVW6q4hYGMEjCEMpump</span>
       </div>
     </>
   );
