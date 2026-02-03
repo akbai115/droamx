@@ -22,6 +22,7 @@ const App: React.FC = () => {
     // Initialize audio. Browser policy requires interaction, so this will truly start on first click/move.
     audioService.init();
     audioService.startHum();
+    audioService.startBackgroundMusic();
 
     resetIdleTimer();
     return () => {
@@ -41,6 +42,7 @@ const App: React.FC = () => {
     resetIdleTimer();
     audioService.init();
     audioService.startHum();
+    audioService.startBackgroundMusic();
   };
 
   const scrollToPlan = () => {

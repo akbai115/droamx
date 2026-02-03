@@ -11,14 +11,17 @@ const Header: React.FC<HeaderProps> = ({ onPlanClick, onArchiveClick }) => {
   return (
     <>
       {/* Top Left: ARCHIVE */}
+      {/* Top Left: YZ0 */}
       <div className="fixed top-10 left-10 z-[500]">
-        <motion.button
+        <motion.a
+          href="https://pump.fun/profile/yz0"
+          target="_blank"
+          rel="noopener noreferrer"
           whileHover={{ opacity: 1, x: 2 }}
-          onClick={onArchiveClick}
-          className="text-[8px] tracking-[0.6em] uppercase font-light opacity-30 transition-all pointer-events-auto"
+          className="text-[8px] tracking-[0.6em] uppercase font-light opacity-30 transition-all pointer-events-auto cursor-pointer block"
         >
-          ARCHIVE
-        </motion.button>
+          YZ0
+        </motion.a>
       </div>
 
       {/* Top Center: BRAND */}

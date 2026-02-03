@@ -3,6 +3,7 @@ class AudioService {
   private context: AudioContext | null = null;
   private humOsc: OscillatorNode | null = null;
   private gainNode: GainNode | null = null;
+  private bgMusic: HTMLAudioElement | null = null;
 
   init() {
     if (this.context) return;
@@ -24,6 +25,17 @@ class AudioService {
 
     // Increased from 0.08 to 0.3 for a significantly louder, more visceral sub-bass presence
     this.gainNode!.gain.exponentialRampToValueAtTime(0.3, this.context!.currentTime + 3);
+  }
+
+  startBackgroundMusic() {
+    if (this.bgMusic) return;
+
+    this.bgMusic = new Audio('/droam.wav');
+    this.bgMusic.loop = true;
+    this.bgMusic.volume = 0.5; // Start at 50% volume
+
+    // Attempt play - might fail without user interaction, but we call this from handleInteraction
+    this.bgMusic.play().catch(e => console.log("Audio play failed (waiting for interaction):", e));
   }
 
   playTone(freq: number = 440, duration: number = 0.5) {
