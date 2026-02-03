@@ -35,6 +35,16 @@ const HUD: React.FC = () => {
         <span className="text-[7px] tracking-[0.4em] uppercase font-light">PHASE.S</span>
         <span className="text-[8px] tracking-[0.2em] font-light uppercase">{phase}</span>
       </div>
+
+      {/* Bottom Center: CA */}
+      <div className="fixed bottom-10 inset-x-0 flex flex-col items-center justify-center gap-1 z-[500] opacity-[0.2] hover:opacity-50 transition-opacity duration-500 cursor-pointer"
+        onClick={() => {
+          navigator.clipboard.writeText('2GnZbLQjWDRtYwbwxvg22yCvceVW6q4hYGMEjCEMpump');
+          // Optional: visual feedback could be added here, but minimalist style might prefer subtly
+        }}>
+        <span className="text-[6px] tracking-[0.3em] uppercase font-light">CONTRACT_ADDRESS</span>
+        <span className="text-[6px] tracking-[0.15em] font-mono">2GnZbLQjWDRtYwbwxvg22yCvceVW6q4hYGMEjCEMpump</span>
+      </div>
     </>
   );
 };
