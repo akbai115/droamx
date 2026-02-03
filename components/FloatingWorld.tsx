@@ -22,6 +22,10 @@ const FloatingWorld: React.FC = () => {
                         <Model url="/glb/garden.glb" scale={1.0} position={[2.5, -0.5, 0]} rotation={[0.2, -0.3, 0]} />
                     </Float>
 
+                    <Float speed={3} rotationIntensity={1} floatIntensity={0.5}>
+                        <Model url="/star.glb" scale={1.5} position={[0, 2.8, 0]} rotation={[0, 0, 0]} />
+                    </Float>
+
                     <Environment preset="city" />
                 </Suspense>
             </Canvas>
