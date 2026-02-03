@@ -36,13 +36,7 @@ const HUD: React.FC = () => {
         <span className="text-[8px] tracking-[0.2em] font-light uppercase">{phase}</span>
       </div>
 
-      {/* Bottom Center: CA */}
-      <div className="fixed bottom-16 inset-x-0 flex flex-col items-center justify-center gap-2 z-[500] cursor-pointer hover:scale-105 transition-transform duration-300"
-        onClick={() => {
-          navigator.clipboard.writeText('2GnZbLQjWDRtYwbwxvg22yCvceVW6q4hYGMEjCEMpump');
-        }}>
-        <span className="text-lg md:text-2xl lg:text-3xl tracking-widest font-mono font-black opacity-100 select-all text-center px-4 break-all">2GnZbLQjWDRtYwbwxvg22yCvceVW6q4hYGMEjCEMpump</span>
-      </div>
+
     </>
   );
 };
