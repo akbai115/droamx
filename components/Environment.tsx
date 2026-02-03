@@ -12,9 +12,9 @@ interface EnvironmentProps {
 const Environment: React.FC<EnvironmentProps> = ({ isIdle }) => {
   return (
     <motion.div
-      className="fixed inset-0 overflow-hidden flex items-center justify-center pointer-events-none bg-[#EAE8E0]"
+      className="fixed inset-0 overflow-hidden flex items-center justify-center pointer-events-none bg-[#92B6C7]"
       animate={{
-        backgroundColor: COLORS.BONE,
+        backgroundColor: COLORS.SKY,
       }}
     >
       {/* Infinite Horizon Glow - Very subtle for high-key look */}

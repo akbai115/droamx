@@ -1,6 +1,7 @@
 
 export const COLORS = {
   BONE: '#EAE8E0',
+  SKY: '#92B6C7',
   SAND: '#D2C5B1',
   WASHED_GOLD: '#EEDC82',
   SHADOW_BLACK: '#1A1918',

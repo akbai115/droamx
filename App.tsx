@@ -72,7 +72,7 @@ const App: React.FC = () => {
 
   return (
     <div
-      className="relative w-screen h-screen cursor-none overflow-hidden select-none bg-[#EAE8E0]"
+      className="relative w-screen h-screen cursor-none overflow-hidden select-none bg-[#92B6C7]"
       onClick={handleInteraction}
       onMouseMove={handleInteraction}
       onMouseDown={handleMouseDown}
